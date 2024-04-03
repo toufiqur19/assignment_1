@@ -5,12 +5,6 @@ class BankAccount {
     this.balance = balance;
   }
 
-  displayAccountInfo() {
-    console.log(`Account Number: ${this.accountNumber}`);
-    console.log(`Owner Name: ${this.ownerName}`);
-    console.log(`balance: ${this.balance}`);
-  }
-
   deposit(amount) {
     this.balance += amount;
     console.log(
@@ -27,8 +21,10 @@ class BankAccount {
     }
   }
 
-  displayBalance() {
-    console.log(`Account ${this.accountNumber} balance: $${this.balance}`);
+  displayAccountInfo() {
+    console.log(`Account Number: ${this.accountNumber}`);
+    console.log(`Owner Name: ${this.ownerName}`);
+    console.log(`balance: ${this.balance}`);
   }
 }
 
