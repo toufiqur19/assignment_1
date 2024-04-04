@@ -21,10 +21,14 @@ class BankAccount {
     }
   }
 
+  getBalance(){
+    console.log(`Current Balance: ${this.balance}`);
+  }
+
   displayAccountInfo() {
     console.log(`Account Number: ${this.accountNumber}`);
     console.log(`Owner Name: ${this.ownerName}`);
-    console.log(`balance: ${this.balance}`);
+    console.log(`Balance: ${this.balance}`);
   }
 }
 
@@ -41,6 +45,7 @@ account1.deposit(500);
 account1.withdraw(700);
 
 console.log('Update Account Info:')
+account1.getBalance();
 account1.displayAccountInfo();
 
 //Account 2
@@ -53,4 +58,5 @@ account2.deposit(800);
 account2.withdraw(400);
 
 console.log('Update Account Info:')
+account2.getBalance();
 account2.displayAccountInfo();
