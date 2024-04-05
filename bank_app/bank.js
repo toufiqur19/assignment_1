@@ -36,27 +36,27 @@ const account1 = new BankAccount("1001", "Toufiqur", 1500);
 const account2 = new BankAccount('1002', 'Sobuj', 3000);
 
 //Account 1
-console.log('Account Number One Information:')
-console.log('Innisial Account Info:')
-account1.displayAccountInfo();
+// console.log('Account Number One Information:')
+// console.log('Innisial Account Info:')
+// account1.displayAccountInfo();
 
 console.log('deposit and withdraw:')
 account1.deposit(500);
 account1.withdraw(700);
+account1.getBalance();
 
 console.log('Update Account Info:')
-account1.getBalance();
 account1.displayAccountInfo();
 
 //Account 2
-console.log('Account Number Tow Information:')
-console.log('Innisial Account Info:')
-account2.displayAccountInfo();
+// console.log('Account Number Tow Information:')
+// console.log('Innisial Account Info:')
+// account2.displayAccountInfo();
 
 console.log('deposit and withdraw:')
 account2.deposit(800);
-account2.withdraw(400);
+account2.withdraw(4000);
+account2.getBalance();
 
 console.log('Update Account Info:')
-account2.getBalance();
 account2.displayAccountInfo();

@@ -18,7 +18,7 @@ function calculator() {
   // error
   function error(massage) {
     result.style.display = "none";
-    validation.style.display = "block";
+    validation.classList.remove("d-none");
     validation.innerHTML = massage;
   }
 
@@ -30,6 +30,6 @@ function calculator() {
     error("Please enter valid number");
   } else {
     result.style.display = "block";
-    validation.style.display = "none";
+    validation.classList.add("d-none");
   }
 }
